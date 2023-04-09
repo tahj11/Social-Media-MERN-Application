@@ -1,5 +1,4 @@
 import { Box } from "@mui/material";
-import WidgetWrapper from "./WidgetWrapper";
 
 const UserImage = ({ image, size = "60px" }) => {
   return (
@@ -8,11 +7,12 @@ const UserImage = ({ image, size = "60px" }) => {
         style={{ objectFit: "cover", borderRadius: "50%" }}
         width={size}
         height={size}
-        src={`http://localhost:3001/assets/${image}`}
+        // src={`http://localhost:6001/assets/${image}`}
+        src="https://yt3.googleusercontent.com/XsjK_k4msgeQWO4xZDdEU3ExccLVkmPNnwNwDL4ivJJhnXXG-9FoLMecy_ro4JOjyh6O2Z5ITac=s900-c-k-c0x00ffffff-no-rj"
         alt=""
       />
     </Box>
   );
 };
 
-export default WidgetWrapper;
+export default UserImage;
